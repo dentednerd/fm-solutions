@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Intro from './challenges/Intro';
+import Profile from './challenges/Profile';
+import Accordion from './challenges/Accordion';
+import Article from './challenges/Article';
+import Social from './challenges/Social';
+import Bootcamp from './challenges/Bootcamp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Intro />
+      <Profile />
+      <Accordion />
+      <Social />
+      <Article />
+      <Bootcamp />
+      {/* four card feature */}
+      {/* base apparel */}
+      {/* intro sign up */}
+      {/* single price grid */}
+      {/* ping coming soon */}
+      {/* huddle */}
+      {/* three column preview */}
     </div>
   );
 }
