@@ -10,10 +10,6 @@ const StyledItem = styled.a`
 
   img {
     object-fit: cover;
-
-    @media(min-width: 768px) {
-      max-width: 20vw;
-    }
   }
 
   img.mobile {
@@ -32,15 +28,14 @@ const StyledItem = styled.a`
 
     @media(min-width: 768px) {
       display: block;
-      width: 20vw;
-      height: 10vw;
+      width: calc((100vw - 4rem) / 3);
       aspect-ratio: 2/1;
     }
   }
 
   .title {
     transform: translateY(100%);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -50,25 +45,26 @@ const StyledItem = styled.a`
     right:0;
     bottom:0;
     left:0;
-    background-image: linear-gradient(to bottom, transparent, #fef9d7 100%);
+    background-image: linear-gradient(to bottom, transparent, #8c4079 100%);
     text-align: center;
     font-size: 0.75rem;
 
     span {
       background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
-      color: #333;
+      color: #69305b;
       font-family: 'Ubuntu', sans-serif;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 0.1rem;
-      border: solid 2px #333;
+      border: solid 2px #69305b;
       padding: 0.5rem;
     }
   }
 
   &:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
 
     .title {
       transform: translateY(0);
