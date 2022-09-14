@@ -20,12 +20,12 @@ const StyledLayout = styled.div`
   a.back-to-top,
   a.solution {
     background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
-    color: #333;
+    color: #69305b;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1rem;
-    border: solid 2px #333;
+    border: solid 2px #69305b;
     padding: 0.5rem;
     font-size: 0.75rem;
   }
